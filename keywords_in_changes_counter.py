@@ -12,11 +12,11 @@ def count_substrings_occurrence(string_to_scan, substrings: list):
     return counts
 
 
-class KeywordsInChangesCounter:
+class KeywordsInChangesChecker:
     def __init__(self, last_page, changed_page, keywords: list):
-        self.last_page = last_page.lower()
-        self.changed_page = changed_page.lower()
-        self.keywords = list(map(lambda x: x.lower(), keywords))
+        self.last_page = last_page
+        self.changed_page = changed_page
+        self.keywords = keywords
 
     def get_keywords_in_changed_part(self):
         last_page_keyword_occurrences = count_substrings_occurrence(self.last_page, self.keywords)
