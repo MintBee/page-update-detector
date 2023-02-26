@@ -1,6 +1,6 @@
 import unittest
 
-import keywords_in_changes_counter
+from src import keywords_in_changes_counter
 
 keywords = ['python', 'programming', 'keyword', 'asdfsadfsadf']
 
